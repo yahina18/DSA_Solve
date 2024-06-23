@@ -4,24 +4,54 @@ class Solution {
         return helperFindClosestElement(arr,k,x);
         
     }
+    //Binary search method 
+    public int bs_method(int []arr,int x)
+    {
+        int start =0;
+        int end = arr.length-1;
+        int mid = (start+end)/2;
+        while(start<=end)
+        {   
+            if(arr[mid] < x)
+                start = mid + 1;
+            else
+                end = mid - 1;
+            mid = (start + end)/2;
+              
+        }
+        return start;
+    }
     public List<Integer> helperFindClosestElement(int[]arr,int k,int x)
     {
-        ArrayList<Integer> list = new ArrayList<Integer>();
-        int low = 0;
-        int high = arr.length-1;
-        while(high-low >= k)
+         ArrayList<Integer> list = new ArrayList<Integer>();
+      
+        if(arr.length == 1){
+            list.add(arr[0]);
+            return list;
+        }    
+
+        int high = bs_method(arr,x);
+        int low = high-1;
+
+        while(k > 0)
         {
-            if(x - arr[low] > arr[high] - x)
-               low++;
+            if(high >= arr.length)
+               low--;
+            else if( low < 0)
+              high++;
+            else if(x - arr[low] > arr[high] - x)
+               high++;
             else 
-               high--;   
+               low--;             
+            k--;
+            
         }
         
-        for(int i = low; i <= high; i++)
+        for(int i = low+1; i <= high-1; i++)
         {
             list.add(arr[i]);
         }
         return list;
 
-    }
+}
 }

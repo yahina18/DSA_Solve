@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0002-add-two-numbers](https://github.com/yahina18/DSA_Solve/tree/master/0002-add-two-numbers) |
 | [0025-reverse-nodes-in-k-group](https://github.com/yahina18/DSA_Solve/tree/master/0025-reverse-nodes-in-k-group) |
 | [0083-remove-duplicates-from-sorted-list](https://github.com/yahina18/DSA_Solve/tree/master/0083-remove-duplicates-from-sorted-list) |
+| [0141-linked-list-cycle](https://github.com/yahina18/DSA_Solve/tree/master/0141-linked-list-cycle) |
 | [0206-reverse-linked-list](https://github.com/yahina18/DSA_Solve/tree/master/0206-reverse-linked-list) |
 | [0234-palindrome-linked-list](https://github.com/yahina18/DSA_Solve/tree/master/0234-palindrome-linked-list) |
 ## Math
@@ -23,9 +24,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0141-linked-list-cycle](https://github.com/yahina18/DSA_Solve/tree/master/0141-linked-list-cycle) |
 | [0234-palindrome-linked-list](https://github.com/yahina18/DSA_Solve/tree/master/0234-palindrome-linked-list) |
 ## Stack
 |  |
 | ------- |
 | [0234-palindrome-linked-list](https://github.com/yahina18/DSA_Solve/tree/master/0234-palindrome-linked-list) |
+## Hash Table
+|  |
+| ------- |
+| [0141-linked-list-cycle](https://github.com/yahina18/DSA_Solve/tree/master/0141-linked-list-cycle) |
 <!---LeetCode Topics End-->
